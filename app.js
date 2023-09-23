@@ -49,10 +49,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRouter from "./routes/user-routes";
-import adminRouter from "./routes/admin-routes";
-import consultantsRouter from "./routes/consultants-routes";
-import bookingsRouter from "./routes/bookings-routes";
+import userRouter from "./routes/user-routes.js";
+import adminRouter from "./routes/admin-routes.js";
+import consultantsRouter from "./routes/consultants-routes.js";
+import bookingsRouter from "./routes/bookings-routes.js";
 import cors from "cors";
 
 dotenv.config();
@@ -60,6 +60,7 @@ dotenv.config();
 const app = express();
 app.use(cors({ origin: "*" }));
 app.use(express.json());
+
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.use("/consultants", consultantsRouter);
