@@ -1,6 +1,6 @@
-import User from "../models/User";
+import User from "../models/User.js";
 import bcrypt from "bcryptjs";
-import Booking from "../models/Bookings";
+import Booking from "../models/Bookings.js";
 import jwt from "jsonwebtoken";
 
 export const getAllUsers = async (req, res, next) => {

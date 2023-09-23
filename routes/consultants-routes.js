@@ -1,9 +1,9 @@
 import express from "express";
 import {
-    addconsultant,
-    getAllconsultant,
-    getconsultantById,
-} from "../controllers/consultants-controller";
+  addconsultant,
+  getAllconsultant,
+  getconsultantById,
+} from "../controllers/consultants-controller.js";
 const consultantsRouter = express.Router();
 
 consultantsRouter.get("/", getAllconsultant);
